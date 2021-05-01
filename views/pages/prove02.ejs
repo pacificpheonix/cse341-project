@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+  </div>
+</div>
+
+<form action='/prove02/book' method='post' class='container'>
+  Book Title:<br>
+  <input type="text" id='title' name='title'><br>
+  Book Description<br>
+  <textarea id='description' name='description' rows='4', cols='50'></textarea><br>
+  <button type="submit">Submit</button>  
+</form>
+
+</body>
+</html>

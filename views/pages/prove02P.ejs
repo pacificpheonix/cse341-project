@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1><%= title %></h1>
+    </div>
+  </div>
+  <div class='container'>
+    <% for (let book of books) { %>
+      <h1><%= book.title %></h1>
+      <p><%= book.desc %></p>
+    <% } %>
+  </div>
+</body>
+</html>
